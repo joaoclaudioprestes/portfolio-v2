@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 export const Header = () => {
+
+  
   return (
     <section className="header">
       <div className="box">
