@@ -1,9 +1,20 @@
-import { Menu } from "./components/Menu/index";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { Service } from './pages/Service';
+import { About } from './pages/About';
+import { Contact } from "./pages/Contact";
 
 function App() {
   return (
     <>
-      <Menu />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="service" element={<Service />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
