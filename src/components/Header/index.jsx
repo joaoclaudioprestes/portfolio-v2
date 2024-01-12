@@ -2,10 +2,9 @@ import "./_menu.sass";
 
 import { Link } from "react-router-dom";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { useState } from "react";
 
-export const Header = () => {
-
-  
+export const Header = ({ page }) => {
   return (
     <section className="header">
       <div className="box">
@@ -13,29 +12,50 @@ export const Header = () => {
           <img src="logo.svg" alt="Logo" className="logo" />
         </div>
         <nav>
-          <Link to="/" className="link">
+          <Link to="/" className={`link ${page === "Home" ? "active" : ""}`}>
             Home
           </Link>
-          <Link to="/service" className="link">
+          <Link
+            to="/service"
+            className={`link ${page === "Service" ? "active" : ""}`}
+          >
             Serviços
           </Link>
-          <Link to="/about" className="link">
+          <Link
+            to="/about"
+            className={`link ${page === "About" ? "active" : ""}`}
+          >
             Sobre mim
           </Link>
-          <Link to="/contact" className="link">
+          <Link
+            to="/contact"
+            className={`link ${page === "Contact" ? "active" : ""}`}
+          >
             Contato
           </Link>
         </nav>
         <div className="box-icons">
-          <div className="icon linkdin">
-            <FaLinkedinIn size={14}/>
-          </div>
-          <div className="icon github">
+          <a
+            href="https://www.linkedin.com/in/jo%C3%A3o-claudio-prestes/"
+            target="_blank"
+            className="icon linkdin"
+          >
+            <FaLinkedinIn size={14} />
+          </a>
+          <a
+            href="https://github.com/joaoclaudioprestes"
+            target="_blank"
+            className="icon github"
+          >
             <FaGithub size={14} />
-          </div>
-          <div className="icon instagram">
+          </a>
+          <a
+            href="https://www.instagram.com/jpres_tes/"
+            target="_blank"
+            className="icon instagram"
+          >
             <FaInstagram size={14} />
-          </div>
+          </a>
         </div>
       </div>
     </section>

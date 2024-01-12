@@ -3,7 +3,7 @@ import { Header } from './../components/Header/index';
 export const Service = () => {
   return (
     <>
-      <Header />
+      <Header page="Service" />
     </>
   )
 }

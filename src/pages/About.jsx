@@ -4,7 +4,7 @@ import { Header } from './../components/Header/index';
 export const About = () => {
   return (
     <>
-      <Header />
+      <Header page="About" />
     </>
   )
 }

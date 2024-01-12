@@ -8,7 +8,7 @@ import {Link} from "react-router-dom"
 export const Home = () => {
   return (
     <>
-      <Header />
+      <Header page="Home"/>
       <div className="container-home">
         <h2>Oi, eu sou João!</h2>
         <h1>Vamos transformar ideias em código?</h1>
