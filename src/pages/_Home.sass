@@ -42,3 +42,22 @@
             color: $font-color
             font-family: $Inter
             font-size: .8rem
+
+    button:hover
+        background: $bg-black50
+        border-color: #32c980d8
+        transition: all .5s
+
+        .icon
+            animation: slide-tr .5s ease-in-out infinite alternate forwards
+
+@-webkit-keyframes slide-tr
+  0% 
+    -webkit-transform: translateY(0) translateX(0)
+    transform: translateY(0) translateX(0)
+
+  100% 
+    -webkit-transform: translateY(-2px) translateX(2px)
+    transform: translateY(-2px) translateX(2px)
+
+
