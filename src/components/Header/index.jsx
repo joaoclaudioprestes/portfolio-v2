@@ -1,4 +1,4 @@
-import "./_Menu.sass";
+import "./_menu.sass";
 
 import { Link } from "react-router-dom";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";

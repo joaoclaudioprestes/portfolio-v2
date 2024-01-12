@@ -1,4 +1,4 @@
-import "./_Home.sass";
+import "./_home.sass";
 
 import { Header } from "../components/Header/index";
 import { GoArrowUpRight } from "react-icons/go";
