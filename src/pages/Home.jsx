@@ -3,9 +3,9 @@ import "./_Home.sass";
 import { Header } from "../components/Header/index";
 import { GoArrowUpRight } from "react-icons/go";
 import { Link } from "react-router-dom";
+import { BoxServices } from "../components/BoxServices";
 
 export const Home = () => {
-  
   return (
     <>
       <Header page="Home" />
@@ -30,6 +30,10 @@ export const Home = () => {
           </button>
         </div>
       </div>
+      
+      <BoxServices />
+
+      <img src="astronalta.png" alt="" className="astronalta" />
     </>
   );
 };

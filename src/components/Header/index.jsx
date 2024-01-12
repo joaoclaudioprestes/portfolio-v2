@@ -1,8 +1,7 @@
-import "./_menu.sass";
+import "./_Menu.sass";
 
 import { Link } from "react-router-dom";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { useState } from "react";
 
 export const Header = ({ page }) => {
   return (
@@ -16,16 +15,16 @@ export const Header = ({ page }) => {
             Home
           </Link>
           <Link
-            to="/service"
-            className={`link ${page === "Service" ? "active" : ""}`}
-          >
-            Serviços
-          </Link>
-          <Link
             to="/about"
             className={`link ${page === "About" ? "active" : ""}`}
           >
             Sobre mim
+          </Link>
+          <Link
+            to="/projects"
+            className={`link ${page === "Projects" ? "active" : ""}`}
+          >
+            Projetos
           </Link>
           <Link
             to="/contact"
