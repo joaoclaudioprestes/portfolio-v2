@@ -1,11 +1,10 @@
-import "./_home.sass";
+import "../style/components/_home.sass";
 
-import { Header } from "../components/Header/index";
 import { GoArrowUpRight } from "react-icons/go";
 import { Link } from "react-router-dom";
-import { BoxServices } from "../components/BoxServices";
+import Header from "./../components/Header";
 
-export const Home = () => {
+const Home = () => {
   return (
     <>
       <Header page="Home" />
@@ -30,10 +29,10 @@ export const Home = () => {
           </button>
         </div>
       </div>
-      
-      <BoxServices />
 
       <img src="astronalta.png" alt="" className="astronalta" />
     </>
   );
 };
+
+export default Home;

@@ -4,7 +4,7 @@ import { CiMobile2 } from "react-icons/ci";
 import { SiMaterialdesign } from "react-icons/si";
 import { MdWebAsset } from "react-icons/md";
 
-export const BoxServices = () => {
+const Services = () => {
   return (
     <div className="container">
       <div className="container-service">
@@ -39,3 +39,5 @@ export const BoxServices = () => {
     </div>
   );
 };
+
+export default Services;
