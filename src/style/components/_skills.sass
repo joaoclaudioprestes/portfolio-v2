@@ -3,7 +3,6 @@
 .container-skills
   width: 70vw
   margin: auto
-  max-height: 90dvh
 
   .container-title
     display: flex
@@ -20,27 +19,26 @@
       color: $font-color
 
 .container-flex
+  margin: auto
+  margin-top: 2rem
   display: flex
-  margin-top: 1rem
-  justify-content: space-around
+  flex-direction: column
+  justify-content: space-evenly
+  align-items: center
+  gap: 2rem
 
-  .container-box-resume
-    width: 50%
-
-    p
-      font-size: 1rem
-      color: $font-color
-      text-align: start
-
-.container-box-skills
-  display: flex
-  max-width: 40%
+  .container-box-resume p
+    font-size: 1rem
+    color: $font-color
+    text-align: center
+    width: 90%
+    margin: auto
 
   .container-skills
-    display: grid
-    grid-template-rows: auto
-    grid-template-columns: repeat(3,1fr)
+    display: flex
+    justify-content: center
     gap: 1rem
+    flex-flow: wrap
 
     .box-skill
       display: flex
@@ -64,12 +62,6 @@
 
 @media screen and ( max-width: 480px )
   .container-flex
-    flex-direction: column
-    align-items: center
 
     .container-box-skills
-      width: 100%
-      
-
-
-
+      flex-wrap: wrap
