@@ -17,7 +17,7 @@ const Header = ({ page }) => {
             to="/about"
             className={`link ${page === "About" ? "active" : ""}`}
           >
-            Blog
+            Sobre mim
           </Link>
         </nav>
       </div>

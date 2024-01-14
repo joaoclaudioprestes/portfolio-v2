@@ -8,21 +8,21 @@ const IconsSocial = () => {
   return (
     <div className="box-icons">
       <Link
-        href="https://www.linkedin.com/in/jo%C3%A3o-claudio-prestes/"
+        to="https://www.linkedin.com/in/jo%C3%A3o-claudio-prestes/"
         target="_blank"
         className="icon linkdin"
       >
         <FaLinkedinIn size={14} />
       </Link>
       <Link
-        href="https://github.com/joaoclaudioprestes"
+        to="https://github.com/joaoclaudioprestes"
         target="_blank"
         className="icon github"
       >
         <FaGithub size={14} />
       </Link>
       <Link
-        href="https://www.instagram.com/jpres_tes/"
+        to="https://www.instagram.com/jpres_tes/"
         target="_blank"
         className="icon instagram"
       >
