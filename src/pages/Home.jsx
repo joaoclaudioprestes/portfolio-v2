@@ -8,6 +8,7 @@ import Projects from "./../components/Projects";
 import Skills from "./../components/Skills";
 import Contact from "../components/Contact";
 import Footer from "./../components/Footer";
+import IconsSocial from './../components/IconsSocial';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <h2>Oi, eu sou João!</h2>
         <h1>Vamos transformar ideias em código?</h1>
         <h3>Full Stack Developer</h3>
+        <IconsSocial />
 
         <div className="box-buttons">
           <button>

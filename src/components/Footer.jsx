@@ -1,5 +1,6 @@
 import React from "react";
 import "../style/components/_footer.sass"
+import IconsSocial from './IconsSocial';
 
 
 const Footer = () => {
@@ -14,6 +15,7 @@ const Footer = () => {
         <p>Powered by</p>
         <img src="logo.svg" alt="" />
       </div>
+      <IconsSocial />
     </footer>
   );
 };
