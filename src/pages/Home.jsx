@@ -3,12 +3,15 @@ import "../style/components/_home.sass";
 import { GoArrowUpRight } from "react-icons/go";
 import { Link } from "react-router-dom";
 import Header from "./../components/Header";
+import Services from "./../components/Services";
+import Projects from "./../components/Projects";
+import Skills from "./../components/Skills";
 
 const Home = () => {
   return (
     <>
       <Header page="Home" />
-      <div className="container-home">
+      <section className="container-home">
         <h2>Oi, eu sou João!</h2>
         <h1>Vamos transformar ideias em código?</h1>
         <h3>Full Stack Developer</h3>
@@ -28,9 +31,14 @@ const Home = () => {
             </Link>
           </button>
         </div>
-      </div>
+        <img src="astronalta.png" alt="" className="astronalta" />
+      </section>
 
-      <img src="astronalta.png" alt="" className="astronalta" />
+      <Services />
+
+      <Projects />
+
+      <Skills />
     </>
   );
 };

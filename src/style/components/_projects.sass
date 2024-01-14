@@ -1,0 +1,117 @@
+@import "../index.sass"
+
+.global-container-projects
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 1rem
+
+  padding: 30px 55px
+
+  .title-projects
+    text-align: center
+    width: 300px
+
+    h2
+      font-size: 2rem
+      font-family: $Inter
+      color: $font-color
+
+    p
+      font-size: 1rem
+      font-family: $Inter
+      color: $font-color
+
+.box-projects
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  gap: 1rem
+
+  .project
+    max-width: 350px
+    background: $bg-black90
+    border: 1.5px solid $bg-black50
+
+    backdrop-filter: blur(2px)
+
+    padding: 10px
+    border-radius: 8px
+
+    display: flex
+    flex-direction: column
+    gap: 10px
+
+    img
+      max-width: 100%
+      border-radius: 4px
+
+    .description
+      display: flex
+      flex-direction: column
+      gap: 5px
+
+      h3
+        font-size: 1.2rem
+        color: $font-color
+
+      p
+        font-size: .9rem
+        color: $font-color
+
+.buttons
+  display: flex
+  justify-content: flex-end
+  gap: .5rem
+  padding-top: 1rem
+
+  .code,
+  .preview
+    padding: 8px 10px
+    border-radius: 50px
+    outline: none
+    background: $bg-black25
+    border: 1px solid $bg-black50
+    cursor: pointer
+    display: flex
+    align-items: center
+    width: 100px
+    display: flex
+    justify-content: center
+
+    .link
+      text-decoration: none
+      color: $font-color
+      font-family: $Inter
+      font-size: .8rem
+
+  .code:hover,
+  .preview:hover
+    background: $bg-black50
+    border-color: #1FDF64
+    transition: all .5s
+
+.view-all
+  padding: 8px 10px
+  border-radius: 50px
+  outline: none
+  background: $bg-black25
+  border: 1px solid $bg-black50
+  cursor: pointer
+  display: flex
+  align-items: center
+  width: 100px
+  display: flex
+  justify-content: center
+
+  .link
+    text-decoration: none
+    color: $font-color
+    font-family: $Inter
+    font-size: .8rem
+
+.view-all:hover
+  background: $bg-black50
+  border-color: #1FDF64
+  transition: all .5s

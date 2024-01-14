@@ -1,0 +1,67 @@
+@import "../index.sass"
+
+.container-global
+  width: 70vw
+  margin: auto
+  height: 90dvh
+
+  .container-title
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    h2
+      font-size: 2rem
+      color: $font-color
+
+    p
+      font-size: 1rem
+      color: $font-color
+
+.container-flex
+  display: flex
+  margin-top: 1rem
+
+  .container-box-resume
+    width: 50%
+
+  .container
+
+  .resume-skills
+    max-width: 90%
+
+  p
+    font-size: 1rem
+    color: $font-color
+
+.container-box-skills
+  display: flex
+  justify-content: flex-end
+  max-width: 50%
+
+.container-skills
+  display: flex
+  flex-wrap: wrap
+  align-items: flex-end
+  justify-content: center
+  gap: 2rem
+
+  .box-skill
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: .5rem
+    width: 100px
+    height: 100px
+    background: $bg-black90
+    border: 1.5px solid $bg-black50
+    border-radius: 8px
+
+    .icon
+      font-size: 2rem
+      color: $font-color
+
+  .box-skill:hover
+    border-color: #1FDF64
+    transition: all .5s

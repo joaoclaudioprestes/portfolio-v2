@@ -1,4 +1,4 @@
-import "./_boxServices.sass";
+import "../style/components/_services.sass"
 
 import { CiMobile2 } from "react-icons/ci";
 import { SiMaterialdesign } from "react-icons/si";
