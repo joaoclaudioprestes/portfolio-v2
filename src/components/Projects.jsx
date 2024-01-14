@@ -1,12 +1,4 @@
 import "../style/components/_projects.sass";
-import {
-  DiReact,
-  DiJavascript1,
-  DiPython,
-  DiHtml5,
-  DiCss3,
-} from "react-icons/di";
-import { SiTailwindcss } from "react-icons/si";
 import { Link } from "react-router-dom";
 import Project from "./Project";
 
@@ -21,7 +13,13 @@ const Projects = () => {
           <p>Conheça meus projetos...</p>
         </div>
         <div className="box-projects">
-          <Project />
+          <Project
+            nameProject="IntegraBike"
+            descriptionProject="Projeto desenvolvido na Faculdade."
+            linkRepository="https://github.com/joaoclaudioprestes/projeto-integra-bike"
+            linkDeploy="https://projeto-integra-bike.vercel.app/"
+            imgProject="integrabike.png"
+          />
         </div>
         <button className="view-all">
           <Link className="link">Veja mais</Link>
