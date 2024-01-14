@@ -37,10 +37,9 @@
   max-width: 40%
 
   .container-skills
-    display: flex
-    flex-wrap: wrap
-    width: 100%
-    height: 100%
+    display: grid
+    grid-template-rows: auto
+    grid-template-columns: repeat(3,1fr)
     gap: 1rem
 
     .box-skill
@@ -69,6 +68,7 @@
     align-items: center
 
     .container-box-skills
+      width: 100%
       
 
 
