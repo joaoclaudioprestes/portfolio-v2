@@ -29,9 +29,7 @@ const Skills = () => {
         </p>
         <div className="container-flex">
           <div className="container-box-resume">
-            <div className="resume-skills">
-              <p>{tech || "O resultado vai aparecer aqui ⬇️"}</p>
-            </div>
+            <p>{tech || "O resultado vai aparecer aqui ⬇️"}</p>
           </div>
           <div className="container-box-skills">
             <div className="container-skills">

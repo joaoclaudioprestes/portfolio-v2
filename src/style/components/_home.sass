@@ -4,21 +4,23 @@
     width: 60vw
     margin: auto
     height: 90dvh
-    color: #fff
 
     display: flex
     flex-direction: column
     justify-content: center
+    align-items: center
     z-index: -1
 
     h1
         font-size: 2.7rem
+        text-align: center
 
     h2
         font-size: 1.9rem
 
     h3
         font-size: 1.4rem
+        color: $color-specially
 
     p
         font-size: 1rem
@@ -31,8 +33,8 @@
         padding: 8px 10px
         border-radius: 50px
         outline: none
-        background: $bg-black25
-        border: 1.5px solid $bg-black50
+        background: $bg-color
+        border: 1.5px solid $font-color
         cursor: pointer
 
         display: flex
@@ -45,7 +47,7 @@
             font-size: .8rem
 
     button:hover
-        background: $bg-black50
+        background: $bg-text-color
         border-color: #1FDF64
         transition: all .5s
 
@@ -61,11 +63,9 @@
     top: 10%
 
 .container-project
-  width: 70vw
-  height: 90dvh
-  margin: auto
-
-
+    width: 70vw
+    height: 90dvh
+    margin: auto
 
 @-webkit-keyframes slide-tr
   0% 
@@ -75,3 +75,23 @@
   100% 
     -webkit-transform: translateY(-2px) translateX(2px)
     transform: translateY(-2px) translateX(2px)
+
+@media screen and (max-width: 480px)
+    .container-home
+        width: 80vw
+
+
+        h1
+            font-size: 2rem
+            color: $font-color
+
+        h2
+            font-size: 1.3rem
+
+        h3
+            font-size: 1rem
+            color: $color-specially
+
+        p
+            font-size: .5rem
+            padding-top: 10px

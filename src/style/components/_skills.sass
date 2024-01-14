@@ -4,10 +4,14 @@
   width: 70vw
   margin: auto
   height: 90dvh
+  display: flex
+  justify-content: center
+  align-items: center
 
   .container-title
     display: flex
     flex-direction: column
+    justify-content: center
     align-items: center
 
     h2
@@ -17,27 +21,27 @@
     p
       font-size: 1rem
       color: $font-color
+      text-align: center
 
 .container-flex
   display: flex
   margin-top: 1rem
+  justify-content: center
+  align-items: flex-start
+  gap: 2rem
 
   .container-box-resume
     width: 50%
 
-  .container
+    p
+      font-size: 1rem
+      color: $font-color
+      text-align: start
 
-  .resume-skills
-    max-width: 90%
-
-  p
-    font-size: 1rem
-    color: $font-color
-
-.container-box-skills
-  display: flex
-  justify-content: flex-end
-  max-width: 50%
+    .container-box-skills
+      display: flex
+      justify-content: flex-end
+      max-width: 50%
 
 .container-skills
   display: flex
@@ -54,8 +58,8 @@
     gap: .5rem
     width: 100px
     height: 100px
-    background: $bg-black90
-    border: 1.5px solid $bg-black50
+    background: $bg-text-color
+    border: 1.5px solid $bg-color
     border-radius: 8px
 
     .icon
@@ -65,3 +69,12 @@
   .box-skill:hover
     border-color: #1FDF64
     transition: all .5s
+
+@media screen and ( max-width: 480px )
+  .container-flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center 
+    width: 100%
+
+  

@@ -1,10 +1,11 @@
 import { MdEmail } from "react-icons/md";
 import "../style/components/_contact.sass";
 import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <section className="conteiner-contact">
+    <div className="conti">
       <div className="title-contact">
         <h2>Contato</h2>
         <p>Entre em contato comigo.</p>
@@ -12,28 +13,28 @@ const Contact = () => {
       <div className="info-contact">
         <button className="box-contact linkedin">
           <FaLinkedin className="icon linkedin" />
-          <a
+          <Link
             href="https://www.linkedin.com/in/jo%C3%A3o-claudio-prestes/"
             target="_blank"
             className="link"
           >
             LinkedIn
-          </a>
+          </Link>
         </button>
         <button className="box-contact whatsapp">
           <FaWhatsapp className="icon whatsapp" />
-          <a href="tel:15997838020" className="link">
+          <Link href="tel:15997838020" className="link">
             (15) 99783-8020
-          </a>
+          </Link>
         </button>
         <button className="box-contact email">
           <MdEmail className="icon github" />
-          <a href="mailto:joaoprestes17@outlook.com" className="link">
+          <Link href="mailto:joaoprestes17@outlook.com" className="link">
             joaoprestes17@outlook.com
-          </a>
+          </Link>
         </button>
       </div>
-    </section>
+    </div>
   );
 };
 

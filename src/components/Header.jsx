@@ -1,7 +1,6 @@
 import "../style/components/_header.sass";
 
 import { Link } from "react-router-dom";
-import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const Header = ({ page }) => {
   return (
@@ -21,29 +20,6 @@ const Header = ({ page }) => {
             Blog
           </Link>
         </nav>
-        <div className="box-icons">
-          <a
-            href="https://www.linkedin.com/in/jo%C3%A3o-claudio-prestes/"
-            target="_blank"
-            className="icon linkdin"
-          >
-            <FaLinkedinIn size={14} />
-          </a>
-          <a
-            href="https://github.com/joaoclaudioprestes"
-            target="_blank"
-            className="icon github"
-          >
-            <FaGithub size={14} />
-          </a>
-          <a
-            href="https://www.instagram.com/jpres_tes/"
-            target="_blank"
-            className="icon instagram"
-          >
-            <FaInstagram size={14} />
-          </a>
-        </div>
       </div>
     </section>
   );

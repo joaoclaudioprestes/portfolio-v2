@@ -1,26 +1,33 @@
 @import "../index.sass"
 
-.global-container-projects
+.container-project
+  width: 70vw
+  margin: auto
   display: flex
-  flex-direction: column
+  justify-content: center
   align-items: center
-  gap: 1rem
 
-  padding: 30px 55px
+  .global-container-projects
+    display: flex
+    flex-direction: column
+    align-items: center
 
-  .title-projects
-    text-align: center
-    width: 300px
+    gap: 1rem
+    margin: auto
 
-    h2
-      font-size: 2rem
-      font-family: $Inter
-      color: $font-color
+    .title-projects
+      text-align: center
+      width: 300px
 
-    p
-      font-size: 1rem
-      font-family: $Inter
-      color: $font-color
+      h2
+        font-size: 2rem
+        font-family: $Inter
+        color: $font-color
+
+      p
+        font-size: 1rem
+        font-family: $Inter
+        color: $font-color
 
 .box-projects
   display: flex
@@ -31,8 +38,8 @@
 
   .project
     max-width: 350px
-    background: $bg-black90
-    border: 1.5px solid $bg-black50
+    background: $bg-text-color
+    border: 1.5px solid $font-color
 
     backdrop-filter: blur(2px)
 
@@ -71,8 +78,8 @@
     padding: 8px 10px
     border-radius: 50px
     outline: none
-    background: $bg-black25
-    border: 1px solid $bg-black50
+    background: $bg-text-color
+    border: 1px solid $font-color
     cursor: pointer
     display: flex
     align-items: center
@@ -88,16 +95,15 @@
 
   .code:hover,
   .preview:hover
-    background: $bg-black50
-    border-color: #1FDF64
+    border-color: $color-specially
     transition: all .5s
 
 .view-all
   padding: 8px 10px
   border-radius: 50px
   outline: none
-  background: $bg-black25
-  border: 1px solid $bg-black50
+  background: $bg-text-color
+  border: 1px solid $font-color
   cursor: pointer
   display: flex
   align-items: center
@@ -112,6 +118,5 @@
     font-size: .8rem
 
 .view-all:hover
-  background: $bg-black50
   border-color: #1FDF64
   transition: all .5s
