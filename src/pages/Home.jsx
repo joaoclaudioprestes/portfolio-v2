@@ -8,7 +8,7 @@ import Projects from "./../components/Projects";
 import Skills from "./../components/Skills";
 import Contact from "../components/Contact";
 import Footer from "./../components/Footer";
-import IconsSocial from './../components/IconsSocial';
+import IconsSocial from "./../components/IconsSocial";
 
 const Home = () => {
   return (
@@ -35,9 +35,7 @@ const Home = () => {
 
       <Skills />
 
-      <section className="conteiner-contact">
-        <Contact />
-      </section>
+      <Contact />
 
       <Footer />
     </>

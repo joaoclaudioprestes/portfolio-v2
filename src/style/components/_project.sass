@@ -1,59 +1,22 @@
 @import "../index.sass"
 
-.container-project
-  width: 70vw
-  min-height: 90dvh
-  margin: auto
+.project
+  max-width: 350px
+  background: $bg-text-color
+  border: 1.5px solid $font-color
+
+  backdrop-filter: blur(2px)
+
+  padding: 10px
+  border-radius: 8px
+
   display: flex
-  justify-content: center
-  align-items: center
+  flex-direction: column
+  gap: 10px
 
-  .global-container-projects
-    display: flex
-    flex-direction: column
-    align-items: center
-
-    gap: 1rem
-    margin: auto
-
-    .title-projects
-      text-align: center
-      width: 300px
-
-      h2
-        font-size: 2rem
-        font-family: $Inter
-        color: $font-color
-
-      p
-        font-size: 1rem
-        font-family: $Inter
-        color: $font-color
-
-.box-projects
-  display: flex
-  flex-wrap: wrap
-  justify-content: center
-  align-items: center
-  gap: 1rem
-
-  .project
-    max-width: 350px
-    background: $bg-text-color
-    border: 1.5px solid $font-color
-
-    backdrop-filter: blur(2px)
-
-    padding: 10px
-    border-radius: 8px
-
-    display: flex
-    flex-direction: column
-    gap: 10px
-
-    img
-      max-width: 100%
-      border-radius: 4px
+  img
+    max-width: 100%
+    border-radius: 4px
 
     .description
       display: flex

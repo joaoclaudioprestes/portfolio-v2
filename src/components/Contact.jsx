@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <div className="conti">
+    <section className="container-contact">
       <div className="title-contact">
         <h2>Contato</h2>
         <p>Entre em contato comigo.</p>
@@ -34,7 +34,7 @@ const Contact = () => {
           </Link>
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 
