@@ -21,12 +21,13 @@ const Skills = () => {
   };
 
   return (
-    <section className="container-global">
-      <div className="container-title">
-        <h2>Conhecimentos</h2>
-        <p>
-          Passe o mause sobre os conhecimentos para saber mais sobre cada um...
-        </p>
+    <section className="container-skills">
+        <div className="container-title">
+          <h2>Conhecimentos</h2>
+          <p>
+            Passe o mause sobre os conhecimentos para saber mais sobre cada um...
+          </p>
+        </div>
         <div className="container-flex">
           <div className="container-box-resume">
             <p>{tech || "O resultado vai aparecer aqui ⬇️"}</p>
@@ -132,7 +133,6 @@ const Skills = () => {
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 };

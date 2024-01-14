@@ -1,12 +1,9 @@
 @import "../index.sass"
 
-.container-global
+.container-skills
   width: 70vw
   margin: auto
-  height: 90dvh
-  display: flex
-  justify-content: center
-  align-items: center
+  max-height: 90dvh
 
   .container-title
     display: flex
@@ -21,14 +18,11 @@
     p
       font-size: 1rem
       color: $font-color
-      text-align: center
 
 .container-flex
   display: flex
   margin-top: 1rem
-  justify-content: center
-  align-items: flex-start
-  gap: 2rem
+  justify-content: space-around
 
   .container-box-resume
     width: 50%
@@ -38,43 +32,44 @@
       color: $font-color
       text-align: start
 
-    .container-box-skills
-      display: flex
-      justify-content: flex-end
-      max-width: 50%
-
-.container-skills
+.container-box-skills
   display: flex
-  flex-wrap: wrap
-  align-items: flex-end
-  justify-content: center
-  gap: 2rem
+  max-width: 40%
 
-  .box-skill
+  .container-skills
     display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    gap: .5rem
-    width: 100px
-    height: 100px
-    background: $bg-text-color
-    border: 1.5px solid $bg-color
-    border-radius: 8px
+    flex-wrap: wrap
+    width: 100%
+    height: 100%
+    gap: 1rem
 
-    .icon
-      font-size: 2rem
-      color: $font-color
+    .box-skill
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      gap: .5rem
+      width: 100px
+      height: 100px
+      background: $bg-text-color
+      border: 1.5px solid $bg-color
+      border-radius: 8px
 
-  .box-skill:hover
-    border-color: #1FDF64
-    transition: all .5s
+      .icon
+        font-size: 2rem
+        color: $font-color
+
+    .box-skill:hover
+      border-color: #1FDF64
+      transition: all .5s
 
 @media screen and ( max-width: 480px )
   .container-flex
     flex-direction: column
-    justify-content: space-between
-    align-items: center 
-    width: 100%
+    align-items: center
 
-  
+    .container-box-skills
+      
+
+
+
