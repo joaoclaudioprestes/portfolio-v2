@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import Project from "./Project";
 
 const Projects = () => {
-  const icons = {};
-
   return (
     <section className="container-project">
       <section className="global-container-projects">
@@ -19,6 +17,14 @@ const Projects = () => {
             linkRepository="https://github.com/joaoclaudioprestes/projeto-integra-bike"
             linkDeploy="https://projeto-integra-bike.vercel.app/"
             imgProject="integrabike.png"
+          />
+
+          <Project
+            nameProject="Calculadora"
+            descriptionProject="Calculadora criada com HTML, CSS e JS."
+            linkRepository="https://github.com/joaoclaudioprestes/calculator"
+            linkDeploy="https://calculator-ochre-zeta-53.vercel.app/"
+            imgProject="calculadora.png"
           />
 
           <Project

@@ -6,7 +6,6 @@ import { MdWebAsset } from "react-icons/md";
 
 const Services = () => {
   return (
-    <div className="container">
       <div className="container-service">
         <div className="title-service">
           <h2>Serviços</h2>
@@ -36,7 +35,6 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
