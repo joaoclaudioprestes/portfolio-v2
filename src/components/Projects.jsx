@@ -20,6 +20,14 @@ const Projects = () => {
             linkDeploy="https://projeto-integra-bike.vercel.app/"
             imgProject="integrabike.png"
           />
+
+          <Project
+            nameProject="Calculadora"
+            descriptionProject="Calculadora criada com HTML, CSS e JS."
+            linkRepository="https://github.com/joaoclaudioprestes/calculator"
+            linkDeploy="https://calculator-ochre-zeta-53.vercel.app/"
+            imgProject="calculadora.png"
+          />
         </div>
         <button className="view-all">
           <Link className="link">Veja mais</Link>
