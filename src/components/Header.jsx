@@ -10,12 +10,12 @@ const Header = ({ page }) => {
           <img src="logo.svg" alt="Logo" className="logo" />
         </div>
         <nav>
-          <Link to="/" className={`link ${page === "Home" ? "active" : ""}`}>
+          <Link to="/" className={`link ${page === "home" ? "active" : ""}`}>
             Home
           </Link>
           <Link
             to="/about"
-            className={`link ${page === "About" ? "active" : ""}`}
+            className={`link ${page === "about" ? "active" : ""}`}
           >
             Sobre mim
           </Link>

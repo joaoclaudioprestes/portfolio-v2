@@ -13,7 +13,7 @@ import IconsSocial from "./../components/IconsSocial";
 const Home = () => {
   return (
     <>
-      <Header page="Home" />
+      <Header page="home" />
       <section className="container-home">
         <h2>Oi, eu sou João!</h2>
         <h1>Vamos transformar ideias em código?</h1>
