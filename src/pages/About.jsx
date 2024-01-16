@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <Header page="about" />
-      <h1>Ainda não em criação!</h1>
+      <h1>Ainda em criação!!</h1>
       {/* <p>
           Desenvolvedor desde 2023 e estudante de Ciência da Computação. Em
           minha jornada acadêmica, busco constantemente a evolução na área Tech,

@@ -3,16 +3,17 @@
 .container-home
     width: 60vw
     margin: auto
-    height: 90dvh
+    height: 90vh
 
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
 
-    h1
-        font-size: 2.5rem
+    .container-home > h1
+        font-size: 4rem
         text-align: center
+        color: red
 
     h2
         font-size: 2rem
@@ -27,53 +28,53 @@
         padding-top: 10px
         text-align: center
 
-.box-buttons
-    padding-top: 20px
+    .box-buttons
+        padding-top: 20px
 
-    button
-        padding: 8px 10px
-        border-radius: 50px
-        outline: none
-        background: $bg-color
-        border: 1.5px solid $font-color
-        cursor: pointer
+        button
+            padding: 8px 10px
+            border-radius: 50px
+            outline: none
+            background: $bg-color
+            border: 1.5px solid $font-color
+            cursor: pointer
 
-        display: flex
-        align-items: center
+            display: flex
+            align-items: center
 
-        .link
-            text-decoration: none
-            color: $font-color
-            font-family: $Inter
-            font-size: .8rem
+            .link
+                text-decoration: none
+                color: $font-color
+                font-family: $Inter
+                font-size: .8rem
 
-    button:hover
-        background: $bg-text-color
-        border-color: #1FDF64
-        transition: all .5s
+        button:hover
+            background: $bg-text-color
+            border-color: #1FDF64
+            transition: all .5s
 
-        .icon
-            animation: slide-tr .5s ease-in-out infinite alternate forwards
+            .icon
+                animation: slide-tr .5s ease-in-out infinite alternate forwards
 
-.astronalta
-    position: absolute
-    z-index: -20
-    width: 25%
-    transform: rotate(20deg)
-    left: 68%
-    top: 10%
+    .astronalta
+        position: absolute
+        z-index: -20
+        width: 25%
+        transform: rotate(20deg)
+        left: 68%
+        top: 10%
 
 .container-project
     width: 70vw
-    height: 90dvh
+    height: 90vh
     margin: auto
 
 @-webkit-keyframes slide-tr
-  0% 
+    0%
     -webkit-transform: translateY(0) translateX(0)
     transform: translateY(0) translateX(0)
 
-  100% 
+    100%
     -webkit-transform: translateY(-2px) translateX(2px)
     transform: translateY(-2px) translateX(2px)
 
