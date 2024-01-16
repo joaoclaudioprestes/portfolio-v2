@@ -1,4 +1,4 @@
-import "../style/components/_home.sass";
+import "../style/components/_home.sass"
 
 import { GoArrowUpRight } from "react-icons/go";
 import { Link } from "react-router-dom";
